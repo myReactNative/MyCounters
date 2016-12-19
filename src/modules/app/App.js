@@ -36,7 +36,7 @@ const App = (props) => {
         increment,
         incrementWithDelay
     } = props
-    console.log(props)
+    console.log(counters)
     return (
         <View style={styles.container}>
             <Counters addFn={addNewCounter}>

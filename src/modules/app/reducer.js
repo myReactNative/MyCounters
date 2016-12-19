@@ -23,12 +23,12 @@ export default handleActions({
 
         //this reducer basically generate a new id for new counter and 
         //assign value 0 to that id
-        console.log("bbbbb")
-        console.log(state.counters);
-        console.log(newId)
         return {
-            ...state.counters,
-            [newId]: 0
+            //...state,
+            counters: {
+                ...state.counters,
+                [newId]: 0
+            }
         }
     },
     [INCREMENT]: (state, action) => {
